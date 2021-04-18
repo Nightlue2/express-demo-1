@@ -2,7 +2,7 @@ const express = require("express");
 let app = express();
 const port = 3070;
 
-app.use(express.json());
+app.use(express.text());
 app.all("*", (req, res, next) => {
   res.header("Access-Control-Allow-Origin", "http://localhost:8080");
   //   res.header("Access-Control-Allow-Headers", "X-Requested-With");
